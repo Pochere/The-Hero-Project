@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patient Details</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>Patient Details</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="doctor-consultations.html">Doctor Consultations</a></li>
+        <li><a href="diagnoses.html">Diagnoses</a></li>
+        <li><a href="medications.html">Prescribed Medications</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <form>
+      <fieldset>
+        <legend>Patient Details</legend>
+        <label for="patient-name">Name:</label>
+        <input type="text" id="patient-name" name="patient-name" required>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+          <option value="">Select</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="emergency-contact">Emergency Contact:</label>
+        <input type="text" id="emergency-contact" name="emergency-contact"><label for="medical-history">Medical History:</label>
+        <textarea id="medical-history" name="medical-history" rows="4"></textarea>
+      </fieldset>
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+  <script src="script.js" defer></script>
+
+</body>
+
+</html>

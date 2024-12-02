@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diagnoses</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>Diagnoses</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="patient-details.html">Patient Details</a></li>
+        <li><a href="doctor-consultations.html">Doctor Consultations</a></li>
+        <li><a href="medications.html">Prescribed Medications</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <form>
+      <fieldset>
+        <legend>Diagnosis Details</legend>
+        <label for="diagnosis">Diagnosis:</label>
+        <input type="text" id="diagnosis" name="diagnosis" required>
+        <label for="severity">Severity Level:</label>
+        <select id="severity" name="severity">
+          <option value="">Select</option>
+          <option value="mild">Mild</option>
+          <option value="moderate">Moderate</option>
+          <option value="severe">Severe</option>
+        </select>
+        <label for="onset-date">Onset Date:</label>
+        <input type="date" id="onset-date" name="onset-date">
+      </fieldset>
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+  <script src="script.js" defer></script>
+
+</body>
+
+</html>

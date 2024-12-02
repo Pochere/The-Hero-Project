@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doctor Consultations</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>Doctor Consultations</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="patient-details.html">Patient Details</a></li>
+        <li><a href="diagnoses.html">Diagnoses</a></li>
+        <li><a href="medications.html">Prescribed Medications</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <form>
+      <fieldset>
+        <legend>Doctor Consultation Details</legend>
+        <label for="doctor-name">Doctor's Name:</label>
+        <input type="text" id="doctor-name" name="doctor-name" required>
+        <label for="consultation-date">Consultation Date:</label>
+        <input type="date" id="consultation-date" name="consultation-date" required>
+        <label for="consultation-notes">Consultation Notes:</label>
+        <textarea id="consultation-notes" name="consultation-notes" rows="4"></textarea>
+        <label for="follow-up">Follow-up Recommendations:</label>
+        <textarea id="follow-up" name="follow-up" rows="3"></textarea>
+      </fieldset>
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+  <script src="script.js" defer></script>
+
+</body>
+
+</html>
